@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-client.login("NDgzNTExMjgzNzk5NTU2MTA2.DuLXpA.o165_tilaJ5Pe6QYfcsQIcYgUdc")
+client.login(process.env.SECRET)
 client.on('message', (message) => {
             if (message.content == "#moder") {
                 message.reply("**► #white_check_mark#  с!mute,#ban,#kick,#say - Модераторские команды**");
