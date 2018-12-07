@@ -43,7 +43,8 @@ client.on('message', (message) => {
         let user = message.mentions.members.first();
                 if (!user) user = message.member;
                 let av = new Discord.RichEmbed()
-                    .addTitle("Комманы:", "**1) ``#moder`` - cписок админских/модераторских комманды (бан,кик) \n2) ``#invite`` - сылка на данного бота. \n3) ``#support`` - сервер тех подержки \n4) ``#afk`` - зайти в АФК режим \n5) ``#OFFafk`` - отключение АФК режима**")
+                    .setTitle("Комманы:") 
+                    .setDiscription("**1) ``#moder`` - cписок админских/модераторских комманды (бан,кик) \n2) ``#invite`` - сылка на данного бота. \n3) ``#support`` - сервер тех подержки \n4) ``#afk`` - зайти в АФК режим \n5) ``#OFFafk`` - отключение АФК режима**")
                     .setColor("40E0D0")
                     .setFooter('Мишутка ♔#1483 © 2018 | Legacy Program','https://cdn.discordapp.com/attachments/495534456875253770/518060896182861834/Screenshot_9.png')
                 message.author.send({embed: av});
