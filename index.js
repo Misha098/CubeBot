@@ -36,7 +36,7 @@ client.on('message', (message) => {
                     .setImage(user.user.avatarURL)
                     .setDescription("**Аватар# **" + user)
                     .setColor("008B8B")
-                    .setFooter("𝙎𝙪𝙥𝙥𝙤𝙧𝙩𝘽𝙤𝙩")
+                    .setFooter("Avatar")
                     .setTimestamp();
                 message.channel.send({embed: av});
     }
@@ -56,7 +56,7 @@ client.on('message', (message) => {
                 let av = new Discord.RichEmbed()
                     .setAuthor('CubeBot', 'https://cdn.discordapp.com/attachments/520565234822414336/520565324265947137/uUeMcMfYBEvBuPBkYu-X4A-default.jpg')
                     .setDescription("**Привет! Я Кубик) я бот дискорда! Это моя инфо и комманды** \n \n **Мой префикс - ``#``, если что обращайся**")
-                    .addField("Мои Разроботчики:", "<:Screenshot_9:518412851480756237> **Мишутка ♔#1483\n<:00987:518415362040004629> Kofiy#7248\n<:565851:518442713012502548> 𝓐𝓤𝓣𝓞𝓟𝓛𝓐𝓨𝓔𝓡ـ[NBF]ـ#5253**")
+                    .addField("Мои Разроботчики:", "<:Screenshot_9:518412851480756237> **Мишутка ♔#1483\n<:565851:518442713012502548> 𝓐𝓤𝓣𝓞𝓟𝓛𝓐𝓨𝓔𝓡ـ[NBF]ـ#5253**")
                     .addField("Полезные сылки:", "**[:link: Официальный сервер Бота](https://discord.gg/6dAuQJw) \n [:link: Сервера Разработчика](https://discord.gg/fJYzM55) \n [:link: Официальный сервер JS](https://discord.gg/bRCvFy9)**")
                     .addField("Версия робота:", "**1.5**")
                     .addField("Партнёры:","-")
