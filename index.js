@@ -55,15 +55,14 @@ client.on('message', (message) => {
                 if (!user) user = message.member;
                 let av = new Discord.RichEmbed()
                     .setAuthor('CubeBot', 'https://cdn.discordapp.com/attachments/520565234822414336/520565324265947137/uUeMcMfYBEvBuPBkYu-X4A-default.jpg')
-                    .setTitle("<:5994_menu:525665929112190986> Menu")
-                    .setDescription("**Привет! Я Кубик) я бот дискорда! Это моя инфо \n \n **Мой префикс - ``#``, если что обращайся**")
+                    .addField("<:5994_menu:525665929112190986> Menu","**Привет! Я Кубик) я бот дискорда! Это моя инфо \n \n **Мой префикс - ``#``, если что обращайся**")
                     .addField("Мои Разроботчики:", "<:Screenshot_9:518412851480756237> **Мишутка ♔#1483\n<:565851:518442713012502548> 𝓐𝓤𝓣𝓞𝓟𝓛𝓐𝓨𝓔𝓡ـ[NBF]ـ#5253**")
                     .addField("Полезные сылки:", "**[:link: Официальный сервер Бота](https://discord.gg/6dAuQJw) \n [:link: Официальный сервер JS](https://discord.gg/bRCvFy9)**")
                     .addField("Версия робота:", "**1.5**")
                     .addField("Партнёры:","-")
                     .setThumbnail('https://cdn.discordapp.com/attachments/520565234822414336/520565324265947137/uUeMcMfYBEvBuPBkYu-X4A-default.jpg')
                     .setColor("40E0D0")
-                    .setFooter('Мишутка ♔#1483 © 2018 ,'https://cdn.discordapp.com/attachments/495534456875253770/518060896182861834/Screenshot_9.png')
+                    .setFooter('Мишутка ♔#1483 © 2018,'https://cdn.discordapp.com/attachments/495534456875253770/518060896182861834/Screenshot_9.png')
                 message.channel.send({embed: av});
     }
     if(message.content=="#invite"){
