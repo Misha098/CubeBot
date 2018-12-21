@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 client.login(process.env.SECRET)
 client.on('message', (message) => {
-                        if (message.content == "#moder") {
+            if (message.content == "#moder") {
                 message.reply("**► #white_check_mark#  с!mute,#ban,#kick,#say - Модераторские команды**");
             }
             if (message.content == "#afk") {
@@ -36,7 +36,7 @@ client.on('message', (message) => {
                     .setImage(user.user.avatarURL)
                     .setDescription("**Аватар# **" + user)
                     .setColor("008B8B")
-                    .setFooter("Avatar")
+                    .setFooter("𝙎𝙪𝙥𝙥𝙤𝙧𝙩𝘽𝙤𝙩")
                     .setTimestamp();
                 message.channel.send({embed: av});
     }
@@ -55,14 +55,14 @@ client.on('message', (message) => {
                 if (!user) user = message.member;
                 let av = new Discord.RichEmbed()
                     .setAuthor('CubeBot', 'https://cdn.discordapp.com/attachments/520565234822414336/520565324265947137/uUeMcMfYBEvBuPBkYu-X4A-default.jpg')
-                    .addField("<:5994_menu:525665929112190986> Menu","**Привет! Я Кубик) я бот дискорда! Это моя инфо \n \n **Мой префикс - ``#``, если что обращайся**")
-                    .addField("Мои Разроботчики:", "<:Screenshot_9:518412851480756237> **Мишутка ♔#1483\n<:565851:518442713012502548> 𝓐𝓤𝓣𝓞𝓟𝓛𝓐𝓨𝓔𝓡ـ[NBF]ـ#5253**")
-                    .addField("Полезные сылки:", "**[:link: Официальный сервер Бота](https://discord.gg/6dAuQJw) \n [:link: Официальный сервер JS](https://discord.gg/bRCvFy9)**")
+                    .setDescription("**Привет! Я Кубик) я бот дискорда! Это моя инфо и комманды** \n \n **Мой префикс - ``#``, если что обращайся**")
+                    .addField("Мои Разроботчики:", "**<:Screenshot_9:525672851802685450> Мишутка ♔#0001\n <:565851:525672868324048907> 𝓐𝓤𝓣𝓞𝓟𝓛𝓐𝓨𝓔𝓡ـ[NBF]ـ#5253**")
+                    .addField("Полезные сылки:", "**[:link: Официальный сервер Бота](https://discord.gg/6dAuQJw) \n [:link: Сервера Разработчика](https://discord.gg/fJYzM55) \n [:link: Официальный сервер JS](https://discord.gg/bRCvFy9)**")
                     .addField("Версия робота:", "**1.5**")
                     .addField("Партнёры:","-")
                     .setThumbnail('https://cdn.discordapp.com/attachments/520565234822414336/520565324265947137/uUeMcMfYBEvBuPBkYu-X4A-default.jpg')
                     .setColor("40E0D0")
-                    .setFooter('Мишутка ♔#1483 © 2018,'https://cdn.discordapp.com/attachments/495534456875253770/518060896182861834/Screenshot_9.png')
+                    .setFooter('Мишутка ♔#0001 © 2018','https://cdn.discordapp.com/attachments/520565234822414336/525674279250165761/Screenshot_9.png')
                 message.channel.send({embed: av});
     }
     if(message.content=="#invite"){
