@@ -135,16 +135,13 @@ client.on('message', (message) => {
                     .setFooter('Мишутка ♔#1483','https://cdn.discordapp.com/attachments/495534456875253770/518060896182861834/Screenshot_9.png')
                 message.channel.send({embed: av});
     }
-    if(message.content=="m"){
-        let user = message.mentions.members.first();
-                if (!user) user = message.member;
-                let av = new Discord.RichEmbed()
-                    .setTitle("Ну я думаю что нада наш сервер залить на маниторинг")
-                    .setDescription("")
-                    .setColor("FF8C00")
-                    .setFooter('Мишутка ♔#1483','https://cdn.discordapp.com/attachments/495534456875253770/518060896182861834/Screenshot_9.png')
-                message.channel.send({embed: av});
-    }
+           var msg = message.content;
+  if(msg.substr(0, 4) == "#say")
+  {
+  var forwrite = msg.substr(5);
+  message.delete(1);
+  message.channel.send(forwrite);
+  }   
     if (!message.guild) return;
 
                                                                                                                                    // If the message content starts with "!kick"
