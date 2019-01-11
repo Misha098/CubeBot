@@ -79,8 +79,8 @@ client.on('message', (message) => {
         let user = message.mentions.members.first();
                 if (!user) user = message.member;
                 let av = new Discord.RichEmbed()
-                    .setTitle("**server support**")
-                    .setDescription("**[__• Cервер тех поддрежки.__](https://discord.gg/6dAuQJw)**")
+                    .setTitle("**Сервер тех поддержка**")
+                    .setDescription("**[• Ответим на все ваши вопросы и жалобы!.](https://discord.gg/YhmBeG2)**")
                     .setColor("FF8C00")
                     .setFooter('Мишутка ♔#1483','https://cdn.discordapp.com/attachments/495534456875253770/518060896182861834/Screenshot_9.png')
                 message.author.send({embed: av});
