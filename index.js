@@ -1,6 +1,5 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-client.user.setActivity(`Deleveopent`,{ type: 'PLAYING' });
 client.login(process.env.SECRET)
 client.on('message', (message) => {
             if (message.content == "#moder") {
@@ -144,9 +143,12 @@ client.on('message', (message) => {
   message.channel.send(forwrite);
   }   
     if (!message.guild) return;
-
-                                                                                                                                   // If the message content starts with "!kick"
-                                                                                                                                   if (message.content.startsWith('#kick')) {
+           } 
+          client.user.setActivity(Deleveopent,{ type: 'PLAYING' }
+            }       
+          
+                                       // If the message content starts with "!kick"
+                                                                                                               if (message.content.startsWith('#kick')) {
                                                                                                                                      // Assuming we mention someone in the message, this will return the user
                                                                                                                                      // Read more about mentions over at https://discord.js.org/#/docs/main/stable/class/MessageMentions
                                                                                                                                      const user = message.mentions.users.first();
