@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 client.user.setActivity(`Deleveopent`,{ type: 'PLAYING' });
-client.ogin(process.env.SECRET)
+client.login(process.env.SECRET)
 client.on('message', (message) => {
             if (message.content == "#moder") {
                 message.reply("**► #white_check_mark#  с!mute,#ban,#kick,#say - Модераторские команды**");
