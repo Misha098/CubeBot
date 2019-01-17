@@ -135,6 +135,8 @@ client.on('message', (message) => {
                     .setFooter('Мишутка ♔#1483','https://cdn.discordapp.com/attachments/495534456875253770/518060896182861834/Screenshot_9.png')
                 message.channel.send({embed: av});
     }
+       client.user.setActivity(`Мишутка ♔#0001 | https://discord.gg/tW8yJgs`,{ type: 'PLAYING' });
+     }
            var msg = message.content;
   if(msg.substr(0, 4) == "#say")
   {
