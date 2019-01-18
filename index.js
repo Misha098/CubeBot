@@ -144,7 +144,7 @@ message.channel.send(forwrite);
 }
 if (!message.guild) return;
 
-client.user.setActivity(`By Мишутка ♔#0001`,{ type: 'PLAYING' }
+client.user.setActivity(`By Мишутка ♔#0001 -> https://discord.gg/WTEqfN2`,{ type: 'PLAYING' }
 )
 
                              // If the message content starts with "!kick"
