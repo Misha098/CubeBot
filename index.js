@@ -1,5 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+client.user.setActivity(Deleveopent,{ type: 'PLAYING' }
 client.login(process.env.SECRET)
 client.on('message', (message) => {
             if (message.content == "#moder") {
@@ -144,8 +145,6 @@ client.on('message', (message) => {
   }   
     if (!message.guild) return;
            } 
-          client.user.setActivity(Deleveopent,{ type: 'PLAYING' }
-            }       
           
                                        // If the message content starts with "!kick"
                                                                                                                if (message.content.startsWith('#kick')) {
