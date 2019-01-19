@@ -144,39 +144,7 @@ message.channel.send(forwrite);
 }
 if (!message.guild) return;
 
-     function act1() {
-
-    client.user.setActivity(`My prefix #`,{ type: 'PLAYING' });
-
-    setTimeout(act2, 6000);
-
-  }
-
-  function act2() {
-
     client.user.setActivity(`на тебя`,{ type: 'WATCHING' });
-
-    setTimeout(act3, 2000);
-
-  }
-
-  function act3() {
-
-    let serverm = client.guilds.get(`492572377838780418`)
-
-    client.user.setActivity(`Умирает`,{ type: 'WATCHING' });
-
-    setTimeout(act4, 6000);
-
-  }
-
-   function act4() {
-
-    client.user.setActivity(`by UltraCord`,{ type: 'PLAYING' });
-
-    setTimeout(act1, 3000);
-
-  }
 )
 
                              // If the message content starts with "!kick"
