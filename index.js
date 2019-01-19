@@ -4,8 +4,6 @@ client.login(process.env.SECRET)
 client.on('message', (message) => {
 const Discord = require('discord.js');
 const client = new Discord.Client();
-client.login("NDgzNTExMjgzNzk5NTU2MTA2.DuQuJg.DZGHqJ47VASx3LoXSaJX60Bv5Ow")
-client.on('message', (message) => {
   if (message.content == "#moder") {
       message.reply("**► #white_check_mark#  с!mute,#ban,#kick,#say - Модераторские команды**");
   }
@@ -148,7 +146,7 @@ message.channel.send(forwrite);
 }
 if (!message.guild) return;
 
-client.user.setActivity(`Powered by Мишутка ♔#0001`,{ type: 'PLAYING' }
+client.user.setActivity(`powered by Мишутка ♔#0001`,{ type: 'PLAYING' }
 )
 
                              // If the message content starts with "!kick"
