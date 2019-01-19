@@ -148,6 +148,9 @@ if (!message.guild) return;
 
 client.user.setActivity(`powered by Мишутка ♔#0001`,{ type: 'PLAYING' }
 )
+OWSAODU
+@(#**$
+"L:"
 
                              // If the message content starts with "!kick"
                                                                                                      if (message.content.startsWith('#kick')) {
