@@ -144,7 +144,7 @@ message.channel.send(forwrite);
 }
 if (!message.guild) return;
 
-client.user.setActivity(`Powered by Мишутка ♔#0001`,{ type: 'PLAYING' }
+client.user.setActivity(`Powered by Мишутка ♔#0001 | #help,#info`,{ type: 'PLAYING' }
 )
 
                              // If the message content starts with "!kick"
