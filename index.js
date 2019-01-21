@@ -143,7 +143,7 @@ message.delete(1);
 message.channel.send(forwrite);
 }
 if (!message.guild) return;
-JUIY6HF88)())()())()()())()9
+
 client.user.setActivity(`Powered by Мишутка ♔#0001`,{ type: 'PLAYING' }
 )
 
