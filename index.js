@@ -63,10 +63,6 @@ let user = message.mentions.members.first();
   client.on('guildMemberAdd', member => {
    member.send("Хэй я увидел что ты зашол на сервер!");
   }
-            
-client.on('guildMemberRemove', member => {
-   member.send("Знаешь почему я токой грустный..я глянул на сервер и ты ушол...");
-            }
 if(message.content=="#info"){
 let user = message.mentions.members.first();
       if (!user) user = message.member;
