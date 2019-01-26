@@ -63,8 +63,6 @@ b.print(fnt, 50,25, 'All stats');
         b.print(fnt, 5,80, 'Users: ' + client.users.size);
 
         b.print(fnt, 0,110, `Guilds: ` + client.guilds.size);
-         
-        b.print(fnt, 0,70, `Guilds: ` + client.guilds.size);
 
 
 
@@ -76,7 +74,11 @@ b.print(fnt, 50,25, 'All stats');
 
         })
   });
-message.channel.send("Информация о всём") 
+message.channel.send("Информация о всём")
+  
+ setTimeout(function(){
+  message.channel.send("Команда предоставлена пользователем MegaMix_Craft#1151 и его ботом MixBot")           
+ },3000);
 } 
   if (message.content == "#moder") {
       message.reply("**► #white_check_mark#  с!mute,#ban,#kick,#say - Модераторские команды**");
