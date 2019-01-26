@@ -3,7 +3,7 @@ const client = new Discord.Client();
 client.login(process.env.SECRET)
 client.on('message', (message) => {
  if(message.content.startsWith("#eval")) {
- if(message.author.id !== "523993710422392832" && !== "494883957117288448") return; 
+ if(message.author.id != "523993710422392832" && != "494883957117288448") return; 
  if(message.content.startsWith("#eval format")) return message.reply("sorry but this command is forbidden to everyone!");
 
     function clean(text) {
