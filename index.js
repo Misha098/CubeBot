@@ -51,14 +51,14 @@ client.on('message', (message) => {
 if(!message.guild) return;
    if(message.author.bot) return;
    const jimp = require('jimp');
- jimp.read("http://design-mania.ru/wp-content/uploads/2016/12/zima67.jpg").then(function(b) {
+ jimp.read("https://cdn.discordapp.com/attachments/528156177339777056/538764214072770570/images.jpg").then(function(b) {
 
         jimp.loadFont(jimp.FONT_SANS_32_BLACK).then(function(fnt) {
           b.resize(jimp.AUTO, 300); // resize the height to 250 and scale the width accordingly
           b.resize(300, jimp.AUTO); // resize the width to 250 and scale the height accordingly
 
     //Накладываем на картинку тексты
-b.print(fnt, 50,25, 'Info Of Me');
+b.print(fnt, 50,25, 'All stats');
 
         b.print(fnt, 5,80, 'Users: ' + client.users.size);
 
