@@ -59,7 +59,14 @@ let user = message.mentions.members.first();
           .setColor("40E0D0")
           .setFooter('Мишутка ♔#0001 "UltraCord © 2019"','https://cdn.discordapp.com/attachments/528492406362865674/534047244698255360/tenor_2.gif')
       message.channel.send({embed: av});
-}
+  }
+  client.on('guildMemberAdd', member => {
+   member.send("Хэй я увидел что ты зашол на сервер!");
+  }
+            
+client.on('guildMemberRemove', member => {
+   member.send("Знаешь почему я токой грустный..я глянул на сервер и ты ушол...");
+            }
 if(message.content=="#info"){
 let user = message.mentions.members.first();
       if (!user) user = message.member;
