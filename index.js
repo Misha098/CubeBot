@@ -2,6 +2,80 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 client.login(process.env.SECRET)
 client.on('message', (message) => {
+ if(message.content.startsWith("#eval")) {
+ if(message.author.id !== "523993710422392832" && !== "494883957117288448") return; 
+ if(message.content.startsWith("#eval format")) return message.reply("sorry but this command is forbidden to everyone!");
+
+    function clean(text) {
+
+  if (typeof(text) === "string")
+
+    return text.replace(/`/g, "`" + String.fromCharCode(8203)).replace(/@/g, "@" + String.fromCharCode(8203));
+
+  else
+
+      return text;
+
+}
+
+    try {
+
+      const code = args.join(" ");
+
+      let evaled = eval(code);
+
+ message.react("✅");
+
+      if (typeof evaled !== "string")
+
+        evaled = require("util").inspect(evaled);
+
+        if(evaled === "Promise { <pending> }") return;
+
+        message.react("✅");
+
+      message.channel.send(clean(evaled), {code:"xl"});
+
+    } catch (err) {
+
+      message.react("❌");
+
+      message.channel.send(`\`ERROR\` \`\`\`xl\n${clean(err)}\n\`\`\``);
+
+    
+
+  }
+} 
+ } 
+  if(message.content.startsWith("#info")) 
+if(!message.guild) return;
+   if(message.author.bot) return;
+   const jimp = require('jimp');
+ jimp.read("http://design-mania.ru/wp-content/uploads/2016/12/zima67.jpg").then(function(b) {
+
+        jimp.loadFont(jimp.FONT_SANS_32_BLACK).then(function(fnt) {
+          b.resize(jimp.AUTO, 300); // resize the height to 250 and scale the width accordingly
+          b.resize(300, jimp.AUTO); // resize the width to 250 and scale the height accordingly
+
+    //Накладываем на картинку тексты
+b.print(fnt, 50,25, 'Info Of Me');
+
+        b.print(fnt, 5,80, 'Users: ' + client.users.size);
+
+        b.print(fnt, 0,110, `Guilds: ` + client.guilds.size);
+
+
+
+        b.getBuffer(jimp.MIME_PNG, (error, buffer) => {
+
+                    message.channel.send({files: [{ name: 'file.png', attachment: buffer }] });
+
+                });
+
+        })
+  });
+message.channel.send("Команда предоставлена пользователем: MegaMix_Craft#1151 и его ботом MixBot") 
+} 
   if (message.content == "#moder") {
       message.reply("**► #white_check_mark#  с!mute,#ban,#kick,#say - Модераторские команды**");
   }
