@@ -1,10 +1,10 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 client.login(process.env.SECRET)
-let messageArray = message.content.split(' ')
+client.on('message', (message) => {
+ let messageArray = message.content.split(' ')
 let command = messageArray[0].toLowerCase()
 let args = messageArray.slice(1)
-client.on('message', (message) => {
  if(message.content.startsWith("#eval")){
  if(!(message.author.id === '494883957117288448' || message.author.id === '523993710422392832')) return;
 
