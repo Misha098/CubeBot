@@ -2,9 +2,10 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 client.login(process.env.SECRET)
 client.on('message', (message) => {
- if(message.content.startsWith("#eval")) {
- if(!(message.author.id === "494883957117288448" || message.author.id === "523993710422392832")) return; 
- if(message.content.startsWith("#eval format")) return message.reply("sorry but this command is forbidden to everyone!");
+ if(message.content.startsWith("#eval")){
+ if(!(message.author.id === '494883957117288448' || message.author.id === '523993710422392832')) return;
+
+     if(message.content.startsWith("#eval format")) return message.reply("sorry but this command is forbidden to everyone!");
 
     function clean(text) {
 
@@ -45,9 +46,8 @@ client.on('message', (message) => {
     
 
   }
-} 
- })
-  if(message.content.startsWith("#stats")) 
+}
+  if(message.content.startsWith("#stats")) {
 if(!message.guild) return;
    if(message.author.bot) return;
    const jimp = require('jimp');
@@ -74,7 +74,8 @@ b.print(fnt, 50,25, 'Info Of Me');
 
         })
   });
-message.channel.send("Команда предоставлена пользователем: MegaMix_Craft#1151 и его ботом MixBot")  
+message.channel.send("Команда предоставлена пользователем: MegaMix_Craft#1151 и его ботом MixBot") 
+} 
   if (message.content == "#moder") {
       message.reply("**► #white_check_mark#  с!mute,#ban,#kick,#say - Модераторские команды**");
   }
@@ -308,4 +309,9 @@ client.user.setActivity(`Powered by Мишутка ♔#0001 | #help,#info`,{ typ
                                                                                                                              message.reply('**Вы не указали пользователя**');
                                                                                                                            }
                                                                                                                          }
-;
+
+
+
+
+
+});
