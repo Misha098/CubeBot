@@ -74,8 +74,7 @@ b.print(fnt, 50,25, 'Info Of Me');
 
         })
   });
-message.channel.send("Команда предоставлена пользователем: MegaMix_Craft#1151 и его ботом MixBot") 
-} 
+message.channel.send("Команда предоставлена пользователем: MegaMix_Craft#1151 и его ботом MixBot")  
   if (message.content == "#moder") {
       message.reply("**► #white_check_mark#  с!mute,#ban,#kick,#say - Модераторские команды**");
   }
@@ -309,9 +308,4 @@ client.user.setActivity(`Powered by Мишутка ♔#0001 | #help,#info`,{ typ
                                                                                                                              message.reply('**Вы не указали пользователя**');
                                                                                                                            }
                                                                                                                          }
-
-
-
-
-
-});
+;
