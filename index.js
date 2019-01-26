@@ -50,6 +50,16 @@ let user = message.mentions.members.first();
           .setFooter('Мишутка ♔#0001 "UltraCord © 2019"','https://cdn.discordapp.com/attachments/528492406362865674/534047244698255360/tenor_2.gif')
       message.author.send({embed: av});
 }
+  if(message.content=="#help"){
+let user = message.mentions.members.first();
+      if (!user) user = message.member;
+      let av = new Discord.RichEmbed()
+          .setTitle("Комманы:")
+          .setDescription("**1) ``#moder`` - cписок админских/модераторских комманды (бан,кик) \n2) ``#invite`` - сылка на данного бота. \n3) ``#support`` - сервер тех подержки \n4) ``#afk`` - зайти в АФК режим \n5) ``#OFFafk`` - отключение АФК режима**")
+          .setColor("40E0D0")
+          .setFooter('Мишутка ♔#0001 "UltraCord © 2019"','https://cdn.discordapp.com/attachments/528492406362865674/534047244698255360/tenor_2.gif')
+      message.channel.send({embed: av});
+}
 if(message.content=="#info"){
 let user = message.mentions.members.first();
       if (!user) user = message.member;
