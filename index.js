@@ -47,7 +47,7 @@ client.on('message', (message) => {
   }
 } 
  } 
-  if(message.content.startsWith("#info")) 
+  if(message.content.startsWith("#stats")) 
 if(!message.guild) return;
    if(message.author.bot) return;
    const jimp = require('jimp');
