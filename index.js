@@ -46,7 +46,7 @@ client.on('message', (message) => {
 
   }
 } 
- }} 
+ })
   if(message.content.startsWith("#stats")) 
 if(!message.guild) return;
    if(message.author.bot) return;
