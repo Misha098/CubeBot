@@ -5,9 +5,9 @@ client.on('message', (message) => {
  let messageArray = message.content.split(' ')
 let command = messageArray[0].toLowerCase()
 let args = messageArray.slice(1)
- if(message.content.startsWith("#eval")){
+ if(message.content.startsWith("#debug")){
 if(message.author.id != '397722893087145984' && message.author.id != '494883957117288448') return;
-     if(message.content.startsWith("#eval format")) return message.reply("sorry but this command is forbidden to everyone!");
+     if(message.content.startsWith("#debug format")) return message.reply("sorry but this command is forbidden to everyone!");
 
     function clean(text) {
 
