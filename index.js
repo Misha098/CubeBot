@@ -138,7 +138,7 @@ let user = message.mentions.members.first();
           .setDescription("**1) ``#moder`` - cписок админских/модераторских комманды (бан,кик) \n2) ``#invite`` - сылка на данного бота. \n3) ``#support`` - сервер тех подержки \n4) ``#afk`` - зайти в АФК режим \n5) ``#OFFafk`` - отключение АФК режима**")
           .setColor("40E0D0")
           .setFooter("Мишутка ♔#2977",'https://cdn.discordapp.com/attachments/528492406362865674/540877062445989940/mishutka_.png')
-         message.channel.senf){embed: aV});
+         message.channel.send({embed: av});
 }
 if(message.content=="#info"){
 let user = message.mentions.members.first();
