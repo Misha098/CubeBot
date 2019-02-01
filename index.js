@@ -2,6 +2,7 @@ const Discord = require('discord.js');
   const client = new Discord.Client();
   client.login(process.env.SECRET)
   client.on('message', (message) => {
+	 let prefix = '#'
    let messageArray = message.content.split(' ')
   let command = messageArray[0].toLowerCase()
   let args = messageArray.slice(1)
