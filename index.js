@@ -116,7 +116,7 @@ let user = message.mentions.members.first();
           .setImage(user.user.avatarURL)
           .setDescription("**Аватар# **" + user)
           .setColor("008B8B")
-          .setFooter('Мишутка ♔#0001 "UltraCord © 2019"','https://cdn.discordapp.com/attachments/528492406362865674/534047244698255360/tenor_2.gif')
+          .setFooter("Мишутка ♔#2977",'https://cdn.discordapp.com/attachments/528492406362865674/540877062445989940/mishutka_.png')
           .setTimestamp();
       message.channel.send({embed: av});
 }
@@ -127,7 +127,7 @@ let user = message.mentions.members.first();
           .setTitle("Комманы:")
           .setDescription("**1) ``#moder`` - cписок админских/модераторских комманды (бан,кик) \n2) ``#invite`` - сылка на данного бота. \n3) ``#support`` - сервер тех подержки \n4) ``#afk`` - зайти в АФК режим \n5) ``#OFFafk`` - отключение АФК режима**")
           .setColor("40E0D0")
-          .setFooter('Мишутка ♔#0001 "UltraCord © 2019"','https://cdn.discordapp.com/attachments/528492406362865674/534047244698255360/tenor_2.gif')
+          .setFooter("Мишутка ♔#2977",'https://cdn.discordapp.com/attachments/528492406362865674/540877062445989940/mishutka_.png')
       message.author.send({embed: av});
 }
   if(message.content=="#help"){
@@ -137,9 +137,9 @@ let user = message.mentions.members.first();
           .setTitle("Комманы:")
           .setDescription("**1) ``#moder`` - cписок админских/модераторских комманды (бан,кик) \n2) ``#invite`` - сылка на данного бота. \n3) ``#support`` - сервер тех подержки \n4) ``#afk`` - зайти в АФК режим \n5) ``#OFFafk`` - отключение АФК режима**")
           .setColor("40E0D0")
-          .setFooter('Мишутка ♔#0001 "UltraCord © 2019"','https://cdn.discordapp.com/attachments/528492406362865674/534047244698255360/tenor_2.gif')
-      message.channel.send({embed: av});
-  }
+          .setFooter("Мишутка ♔#2977",'https://cdn.discordapp.com/attachments/528492406362865674/540877062445989940/mishutka_.png')
+         message.channel.senf){embed: aV});
+}
 if(message.content=="#info"){
 let user = message.mentions.members.first();
       if (!user) user = message.member;
@@ -152,7 +152,7 @@ let user = message.mentions.members.first();
           .addField("Партнёры:","-")
           .setThumbnail('https://cdn.discordapp.com/attachments/520565234822414336/520565324265947137/uUeMcMfYBEvBuPBkYu-X4A-default.jpg')
           .setColor("40E0D0")
-          .setFooter('Мишутка ♔#0001 "UltraCord © 2019"','https://cdn.discordapp.com/attachments/528492406362865674/534047244698255360/tenor_2.gif')
+          .setFooter("Мишутка ♔#2977",'https://cdn.discordapp.com/attachments/528492406362865674/540877062445989940/mishutka_.png')
       message.channel.send({embed: av});
 }
 if(message.content=="#invite"){
@@ -162,7 +162,7 @@ let user = message.mentions.members.first();
           .setTitle("**Bot invite**")
           .setDescription("[:link: **Приглашение на бота**](https://discordapp.com/oauth2/authorize?client_id=483511283799556106&scope=bot&permissions=2146958591)")
           .setColor("FF8C00")
-          .setFooter('Мишутка ♔#0001 "UltraCord © 2019"','https://cdn.discordapp.com/attachments/528492406362865674/534047244698255360/tenor_2.gif')
+          .setFooter("Мишутка ♔#2977",'https://cdn.discordapp.com/attachments/528492406362865674/540877062445989940/mishutka_.png')
       message.author.send({embed: av});
 }
 if(message.content=="#support"){
@@ -172,7 +172,7 @@ let user = message.mentions.members.first();
           .setTitle("**Сервер тех поддержка**")
           .setDescription("**[• Ответим на все ваши вопросы и жалобы!.](https://discord.gg/YhmBeG2)**")
           .setColor("FF8C00")
-         .setFooter('Мишутка ♔#0001 "UltraCord © 2019"','https://cdn.discordapp.com/attachments/528492406362865674/534047244698255360/tenor_2.gif')
+          .setFooter("Мишутка ♔#2977",'https://cdn.discordapp.com/attachments/528492406362865674/540877062445989940/mishutka_.png')
       message.author.send({embed: av});
 }
 if(message.content=="#testers"){
@@ -182,7 +182,7 @@ let user = message.mentions.members.first();
           .setTitle("**Testers Board \n custoesr**")
           .setDescription("foll.js,8559q56sqwgs569675jkhdja9jf789767,86ad#special....\n Compuctator cгарел..<:EROL:505719963454144513>.")
           .setColor("FF8C00")
-          .setFooter('Мишутка ♔#1483','https://cdn.discordapp.com/attachments/495534456875253770/518060896182861834/Screenshot_9.png')
+          .setFooter("Мишутка ♔#2977",'https://cdn.discordapp.com/attachments/528492406362865674/540877062445989940/mishutka_.png')
       message.channel.send({embed: av});
 }
 if(message.content=="#kruto"){
@@ -212,7 +212,7 @@ let user = message.mentions.members.first();
           .setTitle("Мой префикс")
           .setDescription("**#(Command)**")
           .setColor("FF8C00")
-          .setFooter('Мишутка ♔#0001 "UltraCord © 2019"','https://cdn.discordapp.com/attachments/528492406362865674/534047244698255360/tenor_2.gif')
+          .setFooter("Мишутка ♔#2977",'https://cdn.discordapp.com/attachments/528492406362865674/540877062445989940/mishutka_.png')
       message.channel.send({embed: av});
 }
 if(message.content=="money!add @message.name"){
