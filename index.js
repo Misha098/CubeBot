@@ -238,11 +238,11 @@ const Discord = require('discord.js');
   )
   
                                // If the message content starts with "!kick"
-                                                                                                       if (message.content.startsWith('#kick')) {
+                                                                                                       if (command === 'kick') {
                                                                                                                              // Assuming we mention someone in the message, this will return the user
                                                                                                                              // Read more about mentions over at https://discord.js.org/#/docs/main/stable/class/MessageMentions
                                                                                                                              const user = message.mentions.users.first();
-                                                                                                                              if(!message.member.hasPermission("MANAGE_SERVER")) return;
+                                                                                                                              if(!message.member.hasPermission("MANAGE_GUILD")) return;
                                                                                                                              // If we have a user mentioned
                                                                                                                              if (user) {
                                                                                                                                // Now we get the member from the user
