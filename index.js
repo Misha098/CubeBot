@@ -126,7 +126,7 @@ const Discord = require('discord.js');
         let av = new Discord.RichEmbed()
             .setTitle("Комманы:")
             .setDescription("**1) ``#moder`` - cписок админских/модераторских комманды (бан,кик) \n2) ``#invite`` - сылка на данного бота. \n3) ``#support`` - сервер тех подержки \n4) ``#afk`` - зайти в АФК режим \n5) ``#OFFafk`` - отключение АФК режима**")
-            .setColor("40E0D0")
+            .setColor("RANDOM")
             .setFooter("Мишутка ♔#2977",'https://cdn.discordapp.com/attachments/528492406362865674/540877062445989940/mishutka_.png')
         message.author.send({embed: av});
   }
@@ -136,7 +136,7 @@ const Discord = require('discord.js');
         let av = new Discord.RichEmbed()
             .setTitle("Комманы:")
             .setDescription("**1) ``#moder`` - cписок админских/модераторских комманды (бан,кик) \n2) ``#invite`` - сылка на данного бота. \n3) ``#support`` - сервер тех подержки \n4) ``#afk`` - зайти в АФК режим \n5) ``#OFFafk`` - отключение АФК режима**")
-            .setColor("40E0D0")
+            .setColor("RANDOM")
             .setFooter("Мишутка ♔#2977",'https://cdn.discordapp.com/attachments/528492406362865674/540877062445989940/mishutka_.png')
            message.channel.send({embed: av});
   }
@@ -161,7 +161,7 @@ const Discord = require('discord.js');
         let av = new Discord.RichEmbed()
             .setTitle("**Bot invite**")
             .setDescription("[:link: **Приглашение на бота**](https://discordapp.com/oauth2/authorize?client_id=483511283799556106&scope=bot&permissions=2146958591)")
-            .setColor("FF8C00")
+            .setColor("RANDOM")
             .setFooter("Мишутка ♔#2977",'https://cdn.discordapp.com/attachments/528492406362865674/540877062445989940/mishutka_.png')
         message.author.send({embed: av});
   }
@@ -171,7 +171,7 @@ const Discord = require('discord.js');
         let av = new Discord.RichEmbed()
             .setTitle("**Сервер тех поддержка**")
             .setDescription("**[• Ответим на все ваши вопросы и жалобы!.](https://discord.gg/YhmBeG2)**")
-            .setColor("FF8C00")
+            .setColor("RANDOM")
             .setFooter("Мишутка ♔#2977",'https://cdn.discordapp.com/attachments/528492406362865674/540877062445989940/mishutka_.png')
         message.author.send({embed: av});
   }
@@ -211,7 +211,7 @@ const Discord = require('discord.js');
         let av = new Discord.RichEmbed()
             .setTitle("Мой префикс")
             .setDescription("**#(Command)**")
-            .setColor("FF8C00")
+            .setColor("RANDOM")
             .setFooter("Мишутка ♔#2977",'https://cdn.discordapp.com/attachments/528492406362865674/540877062445989940/mishutka_.png')
         message.channel.send({embed: av});
   }
