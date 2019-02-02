@@ -239,7 +239,7 @@ const Discord = require('discord.js');
   )
   
                                // If the message content starts with "!kick"
-                                                                                                       else if(command === 'kick') {
+                                                                                                       elseif(command === 'kick') {
 if (!message.member.hasPermission("KICK_MEMBERS")) {
 return message.channel.send("You haven't got permissions!");
  }
