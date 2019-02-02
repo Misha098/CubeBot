@@ -234,8 +234,8 @@ const Discord = require('discord.js');
   }
   if (!message.guild) return;
   
-  client.user.setActivity(`Powered by Мишутка ♔#0001 | #help,#info`,{ type: 'PLAYING' }
-  )
+ client.user.setActivity(`Powered by Мишутка ♔#2977 | #help,#info `,{ type: 'STREAMING' }
+)
 if (message.content.startsWith('#kick')) {
                                                                                                                              // Assuming we mention someone in the message, this will return the user
                                                                                                                              // Read more about mentions over at https://discord.js.org/#/docs/main/stable/class/MessageMentions
