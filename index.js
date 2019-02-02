@@ -2,7 +2,6 @@ const Discord = require('discord.js');
   const client = new Discord.Client();
   client.login(process.env.SECRET)
   client.on('message', (message) => {
-	 let prefix = '#'
    let messageArray = message.content.split(' ')
   let command = messageArray[0].toLowerCase()
   let args = messageArray.slice(1)
@@ -237,66 +236,85 @@ const Discord = require('discord.js');
   
   client.user.setActivity(`Powered by Мишутка ♔#0001 | #help,#info`,{ type: 'PLAYING' }
   )
-  
-                               // If the message content starts with "!kick"
-                                                                                                      elseif(command === 'kick'){
-if (!message.member.hasPermission("KICK_MEMBERS")) {
-return message.channel.send("You haven't got permissions!");
- }
-const memberino = message.mentions.members.first();
-if(!memberino) {
-return message.channel.send("You don't say about member! =)")
-}
-if(!memberino.kickable) {
-      return message.reply("I cannot kick this user! Do they have a higher role? Do I have kick permissions?");
-    }
-let stoppl = message.guild.owner
-if (memberino === stoppl) {
-return message.channel.send("I can't kick owner!!!");
-}
-	if (!message.guild.me.hasPermission('KICK_MEMBERS')) {
- return message.channel.send("Я не имею права кикать!!!!!");
-}
-let shoblni = message.guild.me
-if (memberino === shoblni) {
-return message.channel.send("I can't kick myself!")
-}
-	
-  let reason = args.slice(1).join(" ");
-  memberino.kick(reason);
-message.channel.send("**Удачно кикнут!**");
-}
-                                                                                                                           // if the message content starts with "!ban"
-                                                                                                                           else if (command === "ban") {
-if (!message.member.hasPermission('BAN_MEMBERS')) {
-return message.reply("**Ты не можешь банить!**")
-}
-   
-    var memberr = message.mentions.members.first();
-    if(!memberr)
-      return message.reply("Use ```*ban @user He was very bad!!!```");
-    if(!memberr.bannable) 
-      return message.reply("I cannot ban this user! Do they have a higher role? Do I have ban permissions?");
-if (memberr === `<@${message.author.id}>`) 
-return message.reply("You can't ban yourself!")
+if (message.content.startsWith('#kick')) {
+                                                                                                                             // Assuming we mention someone in the message, this will return the user
+                                                                                                                             // Read more about mentions over at https://discord.js.org/#/docs/main/stable/class/MessageMentions
+                                                                                                                             const user = message.mentions.users.first();
+                                                                                                                              if(!message.member.hasPermission("MANAGE_SERVER")) return;
+                                                                                                                             // If we have a user mentioned
+                                                                                                                             if (user) {
+                                                                                                                               // Now we get the member from the user
+                                                                                                                               const member = message.guild.member(user);
+                                                                                                                               // If the member is in the guild
+                                                                                                                               if (member) {
+                                                                                                                                 /**
+                                                                                                                                  * Kick the member
+                                                                                                                                  * Make sure you run this on a member, not a user!
+                                                                                                                                  * There are big differences between a user and a member
+                                                                                                                                  */
+                                                                                                                                 member.kick('Кикнут))))').then(() => {
+                                                                                                                                   // We let the message author know we were able to kick the person
+                                                                                                                                   message.reply(`**${user.tag} был успешно кикнут**`);
+                                                                                                                                 }).catch(err => {
+                                                                                                                                   // An error happened
+                                                                                                                                   // This is generally due to the bot not being able to kick the member,
+                                                                                                                                   // either due to missing permissions or role hierarchy
+                                                                                                                                   message.reply('**У этого пользователя слишком высокий ранг**');
+                                                                                                                                   // Log the error
+                                                                                                                                   console.error(err);
+                                                                                                                                 });
+                                                                                                                               } else {
+                                                                                                                                 // The mentioned user isn't in this guild
+                                                                                                                                 message.reply('**Я не обноружал игрока с этим именям**');
+                                                                                                                               }
+                                                                                                                             // Otherwise, if no user was mentioned
+                                                                                                                             } else {
+                                                                                                                               message.reply('**Вы не указали пользователя**');
+                                                                                                                             }
+                                                                                                                           }
+                                                                                                                           if (!message.guild) return;
 
-    let reason = args.slice(1).join(' ');
-    if(!reason) reason = "No reason provided";
-    
-    await memberr.ban(reason)
-      .catch(error => message.reply(`Sorry ${message.author} I couldn't ban because of : ${error}`));
-    message.reply(`${memberr.user.tag} has been banned by ${message.author.tag} because: ${reason}`);
-let bann = new Discord.RichEmbed()
-.setColor("RANDOM")
-    .setTitle(`Ban!`)
-    .setAuthor(client.user.tag)
-    .addField('Ban go to you!', `**You has been banned by ${message.author.tag} because: ${reason}**`)
-	.setTimestamp()
-    .setFooter('Ban isn\'t good!');
-memberr.send(bann).catch(error => { 
-msg.channel.send("I can't send ban letter to banned member but i ban him")
-});
-}
+                                                                                                                           // if the message content starts with "!ban"
+                                                                                                                           if (message.content.startsWith('#ban')) {
+                                                                                                                             // Assuming we mention someone in the message, this will return the user
+                                                                                                                             // Read more about mentions over at https://discord.js.org/#/docs/main/stable/class/MessageMentions
+                                                                                                                             const user = message.mentions.users.first();
+                                                                                                                             if(!message.member.hasPermission("MANAGE_SERVER")) return;
+                                                                                                                             // If we have a user mentioned
+                                                                                                                             if (user) {
+                                                                                                                               // Now we get the member from the user
+                                                                                                                               const member = message.guild.member(user);
+                                                                                                                               // If the member is in the guild
+                                                                                                                               if (member) {
+                                                                                                                                 /**
+                                                                                                                                  * Ban the member
+                                                                                                                                  * Make sure you run this on a member, not a user!
+                                                                                                                                  * There are big differences between a user and a member
+                                                                                                                                  * Read more about what ban options there are over at
+                                                                                                                                  * https://discord.js.org/#/docs/main/stable/class/GuildMember?scrollTo=ban
+                                                                                                                                  */
+                                                                                                                                 member.ban({
+                                                                                                                                   reason: 'Блокировка)))))',
+                                                                                                                                 }).then(() => {
+                                                                                                                                   // We let the message author know we were able to ban the person
+                                                                                                                                   message.reply(`**${user.tag} Был успешно ЗаБлокирован**`);
+                                                                                                                                 }).catch(err => {
+                                                                                                                                   // An error happened
+                                                                                                                                   // This is generally due to the bot not being able to ban the member,
+                                                                                                                                   // either due to missing permissions or role hierarchy
+                                                                                                                                   message.reply('**У этого пользователя слишком высокий ранг**');
+                                                                                                                                   // Log the error
+                                                                                                                                   console.error(err);
+                                                                                                                                 });
+                                                                                                                               } else {
+                                                                                                                                 // The mentioned user isn't in this guild
+                                                                                                                                 message.reply('**Я не обноружал игрока с этим именям**');
+                                                                                                                               }
+                                                                                                                             } else {
+                                                                                                                             // Otherwise, if no user was mentioned
+                                                                                                                               message.reply('**Вы не указали пользователя**');
+                                                                                                                             }
+                                                                                                                           }
   
   
   
