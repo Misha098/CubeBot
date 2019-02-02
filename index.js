@@ -191,7 +191,7 @@ const Discord = require('discord.js');
         let av = new Discord.RichEmbed()
             .setTitle("10/10")
             .setDescription("\n")
-            .setColor("FF8C00")
+            .setColor("RANDOM")
             .setFooter('Мишутка ♔#1483','https://cdn.discordapp.com/attachments/495534456875253770/518060896182861834/Screenshot_9.png')
         message.channel.send({embed: av});
   }
