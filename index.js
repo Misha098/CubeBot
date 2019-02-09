@@ -116,7 +116,7 @@ const Discord = require('discord.js');
             .setImage(user.user.avatarURL)
             .setDescription("**Аватар# **" + user)
             .setColor("008B8B")
-            .setFooter("Мишутка ♔#2977",'https://cdn.discordapp.com/attachments/528492406362865674/540877062445989940/mishutka_.png')
+            .setFooter("Мишутка ♔#2977",'https://cdn.discordapp.com/attachments/543785860743823371/543814688228638721/Kid_kweebec.gif')
             .setTimestamp();
         message.channel.send({embed: av});
   }
@@ -127,7 +127,7 @@ const Discord = require('discord.js');
             .setTitle("Комманы:")
             .setDescription("**1) ``#moder`` - cписок админских/модераторских комманды (бан,кик) \n2) ``#invite`` - сылка на данного бота. \n3) ``#support`` - сервер тех подержки \n4) ``#afk`` - зайти в АФК режим \n5) ``#OFFafk`` - отключение АФК режима**")
             .setColor("RANDOM")
-            .setFooter("Мишутка ♔#2977",'https://cdn.discordapp.com/attachments/528492406362865674/540877062445989940/mishutka_.png')
+            .setFooter("Мишутка ♔#2977",'https://cdn.discordapp.com/attachments/543785860743823371/543814688228638721/Kid_kweebec.gif')
         message.author.send({embed: av});
   }
     if(message.content=="#help"){
@@ -137,7 +137,7 @@ const Discord = require('discord.js');
             .setTitle("Комманы:")
             .setDescription("**1) ``#moder`` - cписок админских/модераторских комманды (бан,кик) \n2) ``#invite`` - сылка на данного бота. \n3) ``#support`` - сервер тех подержки \n4) ``#afk`` - зайти в АФК режим \n5) ``#OFFafk`` - отключение АФК режима**")
             .setColor("RANDOM")
-            .setFooter("Мишутка ♔#2977",'https://cdn.discordapp.com/attachments/528492406362865674/540877062445989940/mishutka_.png')
+            .setFooter("Мишутка ♔#2977",'https://cdn.discordapp.com/attachments/543785860743823371/543814688228638721/Kid_kweebec.gif')
            message.channel.send({embed: av});
   }
   if(message.content=="#info"){
@@ -149,10 +149,10 @@ const Discord = require('discord.js');
             .addField("Мои Разроботчики:", "**<:Screenshot_9:525672851802685450> Мишутка ♔#0001\n <:565851:525672868324048907> 𝓐𝓤𝓣𝓞𝓟𝓛𝓐𝓨𝓔𝓡ـ[NBF]ـ#5253**")
             .addField("Полезные сылки:", "**[:link: Официальный сервер Бота](https://discord.gg/6dAuQJw) \n [:link: Сервера Разработчика](https://discord.gg/fJYzM55) \n [:link: Официальный сервер JS](https://discord.gg/bRCvFy9)**")
             .addField("Версия робота:", "**1.5**")
-            .addField("Партнёры:","-")
+            .addField("Партнёры:","[MixBot](https://discord.gg/pwWNFD2.)")
             .setThumbnail('https://cdn.discordapp.com/attachments/520565234822414336/520565324265947137/uUeMcMfYBEvBuPBkYu-X4A-default.jpg')
             .setColor("40E0D0")
-            .setFooter("Мишутка ♔#2977",'https://cdn.discordapp.com/attachments/528492406362865674/540877062445989940/mishutka_.png')
+            .setFooter("Мишутка ♔#2977",'https://cdn.discordapp.com/attachments/543785860743823371/543814688228638721/Kid_kweebec.gif')
         message.channel.send({embed: av});
   }
   if(message.content=="#invite"){
@@ -162,7 +162,7 @@ const Discord = require('discord.js');
             .setTitle("**Bot invite**")
             .setDescription("[:link: **Приглашение на бота**](https://discordapp.com/oauth2/authorize?client_id=483511283799556106&scope=bot&permissions=2146958591)")
             .setColor("RANDOM")
-            .setFooter("Мишутка ♔#2977",'https://cdn.discordapp.com/attachments/528492406362865674/540877062445989940/mishutka_.png')
+            .setFooter("Мишутка ♔#2977",'https://cdn.discordapp.com/attachments/543785860743823371/543814688228638721/Kid_kweebec.gif')
         message.author.send({embed: av});
   }
   if(message.content=="#support"){
@@ -172,7 +172,7 @@ const Discord = require('discord.js');
             .setTitle("**Сервер тех поддержка**")
             .setDescription("**[• Ответим на все ваши вопросы и жалобы!.](https://discord.gg/YhmBeG2)**")
             .setColor("RANDOM")
-            .setFooter("Мишутка ♔#2977",'https://cdn.discordapp.com/attachments/528492406362865674/540877062445989940/mishutka_.png')
+            .setFooter("Мишутка ♔#2977",'https://cdn.discordapp.com/attachments/543785860743823371/543814688228638721/Kid_kweebec.gif')
         message.author.send({embed: av});
   }
   if(message.content=="#testers"){
