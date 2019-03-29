@@ -234,7 +234,11 @@ const Discord = require('discord.js');
   }
   if (!message.guild) return;
   
- client.user.setActivity(`Powered by Мишутка ♔#2977 | #help,#info `,{ type: 'STREAMING' }
+client.user.setActivity(Префикс #,{ type: 'STREAMING' }
+)
+client.user.setActivity(By Мишутка փ#2977,{ type: 'STREAMING' }
+)
+client.user.setActivity(Роботаю 24/7;),{ type: 'STREAMING' }
 )
 if (message.content.startsWith('#kick')) {
                                                                                                                              // Assuming we mention someone in the message, this will return the user
