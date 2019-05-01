@@ -234,7 +234,7 @@ const Discord = require('discord.js');
   }
   if (!message.guild) return;
   
-client.user.setActivity(By Мишутка փ#2977 Prefix [ # ],{ type: 'STREAMING' }
+client.user.setActivity('By Мишутка փ#2977 Prefix [ # ]`,{ type: 'STREAMING' }
 )
 if (message.content.startsWith('#kick')) {
                                                                                                                              // Assuming we mention someone in the message, this will return the user
@@ -315,6 +315,41 @@ if (message.content.startsWith('#kick')) {
                                                                                                                                message.reply('**Вы не указали пользователя**');
                                                                                                                              }
                                                                                                                            }
+    var time = 250;
+
+  const colors =
+  [
+      "FF0000",
+      "FF4500",
+      "FFD700",
+      "00FF00",
+      "00FFFF",
+      "0000FF",
+      "FF00FF"
+  ]
+  
+  function sleep(ms) {
+    return new Promise(resolve => {
+      setTimeout(resolve, ms);
+    });
+  }
+  
+  
+  async function colorCH(role)
+  {
+      while(true)
+      {
+          role.setColor(colors[0]);
+          console.log("red");
+          await    sleep(time);
+      }
+  }
+  client.on("message", (message) => {
+    if(message.content.substr(0,4) == "#color ")
+    {
+    colorCH(message.mentions.roles.first());
+    }
+    })})
   
   
   
