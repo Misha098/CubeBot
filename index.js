@@ -360,7 +360,7 @@ const colors =
       }
   }
   client.on("message", (message) => {
-    if(message.content.substr(0,4) == "/rb ")
+    if(message.content.substr(0,4) == "#color ")
     {
     colorCH(message.mentions.roles.first());
     }
