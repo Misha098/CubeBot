@@ -233,7 +233,7 @@ const Discord = require('discord.js');
   message.channel.send(forwrite);
   }
   if (!message.guild) return;
-  
+ 
  
 if (message.content.startsWith('#kick')) {
                                                                                                                              // Assuming we mention someone in the message, this will return the user
