@@ -313,10 +313,8 @@ if (message.content.startsWith('#kick')) {
                                                                                                                              // Otherwise, if no user was mentioned
                                                                                                                                message.reply('**Вы не указали пользователя**');
                                                                                                                              }
-                                                                                                                           }
-    var time = 250;
-
-  const colors =
+var time = 250;                                                                                                                           }
+const colors =
   [
       "FF0000",
       "FF4500",
@@ -326,14 +324,14 @@ if (message.content.startsWith('#kick')) {
       "0000FF",
       "FF00FF"
   ]
-  
+
   function sleep(ms) {
     return new Promise(resolve => {
       setTimeout(resolve, ms);
     });
   }
-  
-  
+
+
   async function colorCH(role)
   {
       while(true)
@@ -341,10 +339,28 @@ if (message.content.startsWith('#kick')) {
           role.setColor(colors[0]);
           console.log("red");
           await    sleep(time);
+          role.setColor(colors[1]);
+          console.log("orange");
+          await    sleep(time);
+          role.setColor(colors[2]);
+          console.log("yelow");
+          await    sleep(time);;
+          role.setColor(colors[3]);
+          console.log("green");
+          await    sleep(time);
+          role.setColor(colors[4]);
+          console.log("blue");
+          await    sleep(time);
+          role.setColor(colors[5]);
+          console.log("dark blue");
+          await    sleep(time);
+          role.setColor(colors[6]);
+          console.log("purple");
+          await    sleep(time);
       }
   }
   client.on("message", (message) => {
-    if(message.content.substr(0,4) == "#color ")
+    if(message.content.substr(0,4) == "/rb ")
     {
     colorCH(message.mentions.roles.first());
     }
